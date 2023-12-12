@@ -1,0 +1,106 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;   
+}
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto+Slab:wght@300;600&family=Roboto:wght@100&family=Shadows+Into+Light&display=swap');
+header{
+   box-shadow: 0px 3px 4px gainsboro;
+}
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+nav .navName {
+    font-size: 1.8em;
+    font-weight: 100;
+    color: rgb(14, 3, 96);
+    font-family: 'Amatic SC', sans-serif;
+}
+nav .navItem a{
+    
+     text-decoration: none;
+     color: rgb(32, 24, 93);
+     padding: 10px;
+     font-weight: bold;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+section .sectionText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    width: 400px;
+    height: 300px;
+    /* border: 2px solid red; */
+}
+section .sectionText h1{
+    font-size: 2.5em;
+    color: rgb(32, 24, 93);
+}
+section .sectionText p{
+    font-family: serif;
+    font-weight: 200;
+    color: rgb(32, 24, 93);
+}
+section .sectionImg img{
+    width: 350px;
+    height: 430px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 15px rgb(217, 213, 213);
+}
+section .sectionText .btn1{
+    background-color: rgb(33, 69, 199);
+    border: 2px solid rgb(245, 245, 245);
+    color: white;
+    font-size: 0.7em;
+    width: 130px;
+    height: 35px;
+    border-radius: 15px 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+section .sectionText .btn2{
+    background-color: rgb(191, 192, 196);
+    border: 2px solid rgb(245, 245, 245);
+    color: rgb(43, 43, 43);
+    font-size: 0.7em;
+    width: 130px;
+    height: 35px;
+    border-radius: 15px 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+@media (max-width:799px){
+    section{
+        min-width: 400px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        margin: 5px;
+    }  
+    header{
+        min-width: 400px;
+    }
+    section .sectionImg{
+        padding: 3px;
+          min-width: 400px;
+    }
+    section .sectionText{
+          min-width: 400px;
+    }
+}
